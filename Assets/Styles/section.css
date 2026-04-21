@@ -13,7 +13,7 @@ section {
       defino en la propiedad animacion: 'fondo '
       - le doy una transcion de 10s
       - utilizo infinite para que la animacion sea infinita y no se detenga 
-      - utilizo key frame para controlar la intearcion de la ani,cion
+      - utilizo key frame para controlar la intearcion de la animacion
 */
 
 @keyframes fondo {

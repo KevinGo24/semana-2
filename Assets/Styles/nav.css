@@ -28,3 +28,10 @@ li:hover{
       cursor: pointer;
       box-shadow: wheat 2px 2px 2px ;
 }
+
+a{
+      border: solid wheat;
+      padding: 5px;
+      color: white;
+      text-decoration: none;
+}
