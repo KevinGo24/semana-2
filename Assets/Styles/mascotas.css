@@ -41,7 +41,7 @@ h1{
 }
 
 .pets:hover{
-    transform: scale3d(0,0,1);
+    transform: scale(0.9);
     cursor: pointer;
     box-shadow: 10px 10px 10px greenyellow;
 }
