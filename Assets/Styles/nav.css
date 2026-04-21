@@ -1,0 +1,30 @@
+header{
+      height: 50px;
+      width: 100%;
+      box-shadow: 15px 15px 19px wheat;
+      border-radius: 50px;
+}
+
+ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 10px;
+}
+
+li {
+      list-style: none;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bolder;
+      transition: 2s;
+      color: white;
+      letter-spacing: 5px;
+}
+
+li:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+      box-shadow: wheat 2px 2px 2px ;
+}
