@@ -33,7 +33,6 @@ figure{
 .conatiner_master {
       height: 100%;
       width: 100%;
-
       border-radius: 10px;
 }
 
@@ -46,8 +45,10 @@ figure{
 }
 
 label{
-      color: darkgrey;
+      color: wheat;
       text-align: left;
       font-size: 25px;
       font-weight: bolder;
+      text-shadow: 12px 1px 12px #000000;
+      font-weight: 700;
 }

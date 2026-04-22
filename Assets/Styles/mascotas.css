@@ -23,8 +23,14 @@ h1{
     background: linear-gradient(150deg, wheat, gray);
     text-align: center;
     color: white;
-    border: solid 3px ;
-    width: 900px;
+    border: solid 3px;
+}
+a{
+      border: solid wheat;
+      padding: 5px;
+      color: white;
+      text-decoration: none;
+      width: 5%;
 }
 .container-photo{
     height: 50%;
