@@ -62,16 +62,14 @@ label {
       display: none;
 }
 
-/* Estilos base del header */
+
 header {
       display: flex;
       justify-content: space-between;
-      /* Logo a un lado, menú/burger al otro */
       align-items: center;
       padding: 10px 25px;
       background-color: transparent;
-      /* Oscuro para que resalte el astronauta */
-      box-shadow: 0 5px 15px wheat;
+            box-shadow: 0 5px 15px wheat;
       border-radius: 50px;
       position: relative;
       z-index: 100;
@@ -112,7 +110,6 @@ a {
       font-weight: bold;
       text-decoration: none;
       white-space: nowrap;
-      /* Evita que el nombre se parta en dos líneas */
 }
 
 section {
@@ -123,13 +120,6 @@ section {
       animation: infinite fondo 15s;
       border-radius: 50px;
 }
-
-/*
-      defino en la propiedad animacion: 'fondo '
-      - le doy una transcion de 10s
-      - utilizo infinite para que la animacion sea infinita y no se detenga 
-      - utilizo key frame para controlar la intearcion de la animacion
-*/
 
 @keyframes fondo {
       50% {
@@ -222,7 +212,6 @@ a {
 @media (max-width: 550px) {
       header {
             flex-direction: row;
-            /* Mantiene logo y burger en la misma línea */
             padding: 15px;
       }
 
@@ -230,7 +219,6 @@ a {
             display: block;
       }
 
-      /* Ocultamos el menú por defecto en móvil */
       .Nav {
             position: absolute;
             top: 0;
