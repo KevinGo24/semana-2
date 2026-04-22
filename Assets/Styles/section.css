@@ -3,7 +3,7 @@ section {
       height: 500px;
       background-repeat: no-repeat;
       background-position: left;
-      animation: infinite fondo 20s;
+      animation: infinite fondo 15s;
       border-radius: 50px;
 }
 

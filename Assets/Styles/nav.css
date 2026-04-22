@@ -1,8 +1,16 @@
-header{
-      height: 50px;
-      width: 100%;
-      box-shadow: 15px 15px 19px wheat;
+/* Estilos base del header */
+header {
+      display: flex;
+      justify-content: space-between;
+      /* Logo a un lado, menú/burger al otro */
+      align-items: center;
+      padding: 10px 25px;
+      background-color: transparent;
+      /* Oscuro para que resalte el astronauta */
+      box-shadow: 0 5px 15px wheat;
       border-radius: 50px;
+      position: relative;
+      z-index: 100;
 }
 
 ul {
@@ -18,20 +26,27 @@ li {
       text-decoration: none;
       font-size: 20px;
       font-weight: bolder;
-      transition: 2s;
+      transition: 0.5s;
       color: white;
       letter-spacing: 5px;
 }
 
-li:hover{
+li:hover {
       transform: scale(1.1);
       cursor: pointer;
-      box-shadow: wheat 2px 2px 2px ;
 }
 
-a{
-      border: solid wheat;
+a {
       padding: 5px;
       color: white;
       text-decoration: none;
+}
+
+.logo-text {
+      color: wheat;
+      font-size: 22px;
+      font-weight: bold;
+      text-decoration: none;
+      white-space: nowrap;
+      /* Evita que el nombre se parta en dos líneas */
 }
