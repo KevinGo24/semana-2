@@ -1,9 +1,3 @@
-/* Importaciones de los estilos que se van a utilizar */
-@import url(/Assets/Styles/header.css);
-@import url(./section.css);
-@import url(./nav.css);
-@import url(./Image.css);
-/*-----------------#132152----------------------*/
 
 * {
       box-sizing: border-box;
@@ -68,6 +62,163 @@ label {
       display: none;
 }
 
+/* Estilos base del header */
+header {
+      display: flex;
+      justify-content: space-between;
+      /* Logo a un lado, menú/burger al otro */
+      align-items: center;
+      padding: 10px 25px;
+      background-color: transparent;
+      /* Oscuro para que resalte el astronauta */
+      box-shadow: 0 5px 15px wheat;
+      border-radius: 50px;
+      position: relative;
+      z-index: 100;
+}
+
+ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 10px;
+}
+
+li {
+      list-style: none;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bolder;
+      transition: 0.5s;
+      color: white;
+      letter-spacing: 5px;
+}
+
+li:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+}
+
+a {
+      padding: 5px;
+      color: white;
+      text-decoration: none;
+}
+
+.logo-text {
+      color: wheat;
+      font-size: 22px;
+      font-weight: bold;
+      text-decoration: none;
+      white-space: nowrap;
+      /* Evita que el nombre se parta en dos líneas */
+}
+
+section {
+      background-image: url(/Assets/Picture/1.png);
+      height: 500px;
+      background-repeat: no-repeat;
+      background-position: left;
+      animation: infinite fondo 15s;
+      border-radius: 50px;
+}
+
+/*
+      defino en la propiedad animacion: 'fondo '
+      - le doy una transcion de 10s
+      - utilizo infinite para que la animacion sea infinita y no se detenga 
+      - utilizo key frame para controlar la intearcion de la animacion
+*/
+
+@keyframes fondo {
+      50% {
+            background-image: url(/Assets/Picture/1.png);
+            background-position: center;
+
+      }
+
+      50% {
+            background-image: url(/Assets/Picture/1.png);
+            background-position: right;
+      }
+}
+
+h1 {
+      margin-top: 300px;
+      text-align: right;
+      color: darkgrey;
+      font-size: 40px;
+      text-shadow: 10px 10px 10px white;
+}
+
+p {
+      margin-top: 10px;
+      color: darkgray;
+      text-align: right;
+      font-size: 40px;
+      text-shadow: 10px 10px 10px white;
+}
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      background-color: gray;
+      display: flex;
+      gap: 20px;
+      margin: 20px;
+      padding: 20px;
+}
+
+.container-master {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+}
+
+h1 {
+      background: linear-gradient(150deg, wheat, gray);
+      text-align: center;
+      color: white;
+      border: solid 3px;
+}
+
+a {
+      border: solid wheat;
+      padding: 5px;
+      color: white;
+      text-decoration: none;
+      width: 5%;
+}
+
+.container-photo {
+      height: 50%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+}
+
+.pets {
+      height: 400px;
+      width: 100%;
+      transition: 1s;
+      border-radius: 100px;
+}
+
+.pets:hover {
+      transform: scale(0.9);
+      cursor: pointer;
+      box-shadow: 10px 10px 10px greenyellow;
+}
+
 @media (max-width: 550px) {
       header {
             flex-direction: row;
@@ -89,7 +240,7 @@ label {
             padding: 2rem;
       }
 
-      .menu-items{
+      .menu-items {
             flex-direction: column;
             align-items: end;
       }
