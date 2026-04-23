@@ -1,8 +1,6 @@
 /* Importaciones de los estilos que se van a utilizar */
-@import url(/Assets/Styles/header.css);
 @import url(./section.css);
 @import url(./nav.css);
-@import url(./Image.css);
 /*-----------------#132152----------------------*/
 
 *{
@@ -23,7 +21,7 @@ body{
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      background-attachment: fixed;
+      
 }
 
 figure{
@@ -45,10 +43,9 @@ figure{
 }
 
 label{
-      color: wheat;
+      color: white;
       text-align: left;
       font-size: 25px;
       font-weight: bolder;
-      text-shadow: 12px 1px 12px #000000;
-      font-weight: 700;
+      text-shadow: 1px 1px 10px white;
 }
