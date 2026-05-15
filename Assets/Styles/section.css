@@ -1,5 +1,5 @@
 section {
-  background-image: url(./Assets/Picture/1.png);
+  background-image: url(/Assets/Picture/1.png);
   height: 500px;
   background-repeat: no-repeat;
   background-position: left;
@@ -10,12 +10,12 @@ section {
 
 @keyframes fondo {
   50% {
-    background-image: url(./Assets/Picture/1.png);
+    background-image: url(/Assets/Picture/1.png);
     background-position: center;
     
   }
   50% {
-    background-image: url(./Assets/Picture/1.png);
+    background-image: url(/Assets/Picture/1.png);
     background-position: right;
   }
 }

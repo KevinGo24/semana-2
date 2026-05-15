@@ -1,6 +1,6 @@
 /* Importaciones de los estilos que se van a utilizar */
-@import url(./section.css);
-@import url(./nav.css);
+@import url(/Assets/Styles/section.css);
+@import url(/Assets/Styles/nav.css);
 /*-----------------#132152----------------------*/
 
 *{
@@ -17,7 +17,7 @@ body{
       display: flex;
       flex-direction: column;
       gap: 30px;
-      background-image: url(./Assets/Picture/fondo.jpg);
+      background-image: url(/Assets/Picture/fondo.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
