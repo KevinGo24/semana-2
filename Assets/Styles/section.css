@@ -1,21 +1,24 @@
 section {
-  background-image: url(./Assets/Picture/1.png);
+  /* Ruta corregida: sale de Styles, entra a Picture */
+  background-image: url("../Picture/1.png");
   height: 500px;
   background-repeat: no-repeat;
   background-position: left;
-  animation: infinite fondo 15s;
+  animation: fondo 15s infinite; /* El orden suele ser: nombre duración repetición */
   border-radius: 50px;
 }
 
-
 @keyframes fondo {
-  50% {
-    background-image: url(./Assets/Picture/1.png);
-    background-position: center;
-    
+  0% {
+    background-image: url("../Picture/1.png");
+    background-position: left;
   }
   50% {
-    background-image: url(./Assets/Picture/1.png);
+    background-image: url("../Picture/1.png");
+    background-position: center;
+  }
+  100% {
+    background-image: url("../Picture/1.png");
     background-position: right;
   }
 }
